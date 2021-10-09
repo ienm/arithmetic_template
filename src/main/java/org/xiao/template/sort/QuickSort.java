@@ -2,6 +2,7 @@ package org.xiao.template.sort;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.xiao.template.common.Utils;
 
 import java.util.Arrays;
 
@@ -42,11 +43,11 @@ public class QuickSort {
             if (array[l] <= midValue){
                 l++;
             } else {
-                swap(array,l,r);
+                Utils.swap(array,l,r);
                 r--;
             }
         }
-        swap(array,left,r);
+        Utils.swap(array,left,r);
         return r;
     }
 
@@ -65,17 +66,11 @@ public class QuickSort {
             }
 
             if (l <= r){
-                swap(array,l,r);
+                Utils.swap(array,l,r);
             }
         }
-        swap(array,left,r);
+        Utils.swap(array,left,r);
         return r;
-    }
-
-    void swap(int[] array, int p1, int p2){
-        int temp = array[p1];
-        array[p1] = array[p2];
-        array[p2] = temp;
     }
 
 }
