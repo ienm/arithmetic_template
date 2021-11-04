@@ -6,7 +6,7 @@ public class 快速倍乘 {
 
     @Test
     public void test() {
-        System.out.println(mul(2445,92));
+        System.out.println(mul(3,3));
     }
 
     static long mul(long a, long k){
